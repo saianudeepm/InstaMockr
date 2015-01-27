@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutPostRow"
+    android:clickable="true"
+    >
+
+    <ImageView
+        android:id="@+id/ivUserProfile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/txtUserProfilePic"
+        android:src="@drawable/ic_launcher"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" 
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:text="@string/textUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ivUserProfile"
+        android:layout_alignBottom="@+id/ivUserProfile"
+        android:paddingTop="15dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ff4594d5" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/ivRelativeTime"
+        android:contentDescription="@string/textClockImage"
+        android:src="@drawable/ic_time"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@id/tvUserName"
+        android:layout_toLeftOf="@+id/tvRelativeTime"
+        android:layout_toStartOf="@+id/tvRelativeTime" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignBottom="@id/tvUserName"
+        android:id="@+id/tvRelativeTime"
+        android:text="4 hours ago"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp" />
+
+    <ImageView
+        android:id="@+id/ivPoster"
+        android:layout_width="fill_parent"
+        android:layout_height="340dp"
+        android:layout_below="@+id/ivUserProfile"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/textPosterImage" />
+
+    <TextView
+        android:id="@+id/tvCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textCaption"
+        android:layout_below="@+id/ivPoster"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ff060606"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignRight="@+id/tvRelativeTime"
+        android:layout_alignEnd="@+id/tvRelativeTime" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivLikes"
+        android:layout_below="@+id/tvCaption"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/textLikesIcon"
+        android:src="@drawable/ic_heart"
+        android:layout_marginLeft="8dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textNumLikes"
+        android:id="@+id/tvLikes"
+        android:layout_below="@+id/tvCaption"
+        android:layout_toRightOf="@+id/ivLikes"
+        android:layout_toEndOf="@+id/ivLikes"
+        android:layout_alignBottom="@id/ivLikes"
+        android:layout_alignTop="@id/ivLikes"
+        android:gravity="center_vertical"
+        android:textColor="#ff50819e"
+        android:layout_marginTop="5dp"
+        />
+</RelativeLayout>

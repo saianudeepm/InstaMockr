@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">InstaMockr</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="txtUserProfilePic">User Profile Pic</string>
+    <string name="textUserName">charliespeaks</string>
+    <string name="textCaption">Such a lovely Weather!</string>
+    <string name="textPosterImage">poster image</string>
+    <string name="textLikesIcon" />
+    <string name="textNumLikes">1330 likes</string>
+    <string name="textClockImage">clock image</string>
+
+</resources>
